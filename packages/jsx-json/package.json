@@ -1,0 +1,46 @@
+{
+    "name": "jsx-json",
+    "version": "2.0.3",
+    "description": "Compose JSON objects using JSX (forbidden + cursed js library).",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "default": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./jsx-runtime": {
+            "default": "./dist/jsx-runtime.js",
+            "types": "./dist/jsx-runtime.d.ts"
+        },
+        "./jsx-dev-runtime": {
+            "default": "./dist/jsx-runtime.js",
+            "types": "./dist/jsx-runtime.d.ts"
+        }
+    },
+    "type": "module",
+    "scripts": {
+        "build": "tsc || exit 0",
+        "build:watch": "tsc -w --preserveWatchOutput",
+        "dev": "pnpm build:watch"
+    },
+    "keywords": [
+        "jsx",
+        "json"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/omranjamal/jsx-json.git"
+    },
+    "contributors": [
+        {
+            "name": "Omran Jamal",
+            "email": "omran@omranjamal.me",
+            "url": "https://omranjamal.me"
+        }
+    ],
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "typescript": "5.2.2"
+    }
+}
